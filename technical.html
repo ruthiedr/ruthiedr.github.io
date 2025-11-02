@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+      <nav id="navbar">
+        <header><h1>What is CSS?</h1></header>
+        <ul>
+          <li> <a class ="nav-link" href="#Browser_default_styles">Browser default styles</a></li>
+          <li> <a class ="nav-link" href="#what_is_CSS_for?">What is CSS for?</a></li>
+          <li> <a class ="nav-link" href="#css_syntax_basics">CSS syntax basics</a></li>
+          <li> <a class ="nav-link" href="#how_is_CSS_applied?">How is CSS applied?</a></li>
+          <li> <a class ="nav-link" href="#summary">Summary</a></li>
+          </ul>
+        </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Browser_default_styles">
+          <header><h2>Browser default styles</h2></header>
+          <p>In the Structuring content with HTML module, we covered what HTML is and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text.</p>
+          <p>What you are seeing are the browser's default styles — very basic styling that the browser applies to HTML to make sure that the page will be basically readable even if no explicit styling is specified by the author of the page. These styles are defined in default CSS stylesheets contained within the browser — they have nothing to do with HTML.</p>
+          <code>
+            &lt;h1&gt;CSS is great&lt;/h1&gt;<br>
+&lt;h2&gt;CSS stands for Cascading Style Sheets&lt;/h2&gt;<br>
+&lt;p&gt;You can style text.&lt;/p&gt;<br>
+&lt;p&gt;And create layouts and special effects.&lt;p&gt;
+          </code>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+        </section>
+          <section class="main-section" id="what_is_CSS_for?">
+            <header><h2>What is CSS for?</h2></header>
+            <p>Using CSS, you can control exactly how HTML elements look in the browser, presenting your documents to your users with whatever design and layout you like.</p>
+             <p>A document is usually a text file structured using a markup language, most commonly HTML (these are termed HTML documents). You may also come across documents written in other markup languages such as SVG or XML. Where previously we've talked about web pages, an HTML document contains the web page's content and specifies its structure.
+</p>
+            <code>&lt;h1&gt;CSS is great&lt;/h1&gt;<br>
+                &lt;h2&gt;CSS stands for Cascading Style Sheets&lt;/h2&gt;<br>
+                &lt;p&gt;You can style text.&lt;/p&gt;<br>
+                &lt;p&gt;And create layouts and special effects.&lt;p&gt;</code>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+          </section>
+            <section class="main-section" id="css_syntax_basics">
+              <header><h2>CSS syntax basics</h2></header>
+              <p>CSS is a rule-based language — you define rules by specifying groups of styles that should be applied to particular element or groups of elements on your web page.</p>
+              <p>For example, you might decide to style the main heading on your page as large red text. The following code shows a very simple CSS rule that would achieve this:</p>
+              <code>
+h1 {
+  color: red;
+  font-size: 2.5em;
+}</code>
+
+              <li>In the above example, the CSS rule opens with a selector. This selects the HTML elements that we are going to style. In this case, we are styling level one headings (&lt;h1&gt;).</li>
+            </section>
+              <section class="main-section" id="how_is_CSS_applied?">
+                <header><h2>How is CSS applied?</h2></header>
+                <p>As explained in How browsers load websites, when you navigate to a web page, the browser first receives the HTML document containing the web page content and converts it to a DOM tree.</p>
+                <p>After that, any CSS rules found in the web page (either inserted directly in the HTML, or in referenced external .css files) are sorted into different "buckets", based on the different elements they will be applied to (as specified by their selectors). The CSS rules are then applied to the DOM tree, resulting in a render tree, which is then painted to the browser window.</p>
+                <code>&lt;h1&gt;CSS is great&lt;/h1&gt;<br>
+&lt;h2&gt;CSS stands for Cascading Style Sheets&lt;/h2&gt;<br>
+&lt;p&gt;You can style text.&lt;/p&gt;<br>
+&lt;p&gt;And create layouts and special effects.&lt;p&gt;</code>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+              </section>
+                <section class="main-section" id="summary">
+                  <header><h2>Summary</h2></header>
+                  <p>Now that you have some understanding of what CSS is and how it works, let's move on to giving you some practice with writing CSS yourself and explaining the syntax in more detail.
+</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <code>&lt;h1&gt;CSS is great&lt;/h1&gt;<br>
+                    &lt;h2&gt;CSS stands for Cascading Style Sheets&lt;/h2&gt;<br>
+                    &lt;p&gt;You can style text.&lt;/p&gt;<br>
+                    &lt;p&gt;And create layouts and special effects.&lt;p&gt;</code>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                </section>
+        </main>
+      </body>
+  </html>
